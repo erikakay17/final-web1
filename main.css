@@ -1,10 +1,151 @@
 *{
     margin:0;
+
 }
 
 
 img{
     width:100%;
 }
+
+
+body{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color:#C3E0A6;
+
+}
+
+.title{
+    color: #ed7d3aff;
+    font-family: Candara, Helvetica, Arial;
+    font-size:700%;
+    grid-column: 1/4;
+    text-align:center;
+
+}
+
+.tagline{
+    color:#ed7d3aff;
+    font-family: "Arial Narrow";
+    font-size:200%;
+    grid-column: 1/4;
+    text-align:center;
+    margin-top:-10px;
+    padding-left:200px;
+    padding-bottom:50px;
+    font-style:italic;
+
+
+}
+
+.nav-button{
+    background-color:#ef2d56ff;
+    color:white;
+    font-family: Candara, Helvetica, Arial;
+    text-decoration:none;
+    font-size:200%;
+    margin:20px;
+    text-align:center;
+    padding: 10px;
+    border-radius:25px;
+}
+
+.main-pic{
+    grid-column:2/4;
+}
+
+nav{
+    grid-column:1/2;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#current-button{
+    border: solid 3px white;
+    background-color:#F4708C;
+}
+
+main{
+    grid-column:1/4;
+    background-color:#2fbf71ff;
+    color:white;
+    font-family:Candara, Helvetica, Arial;
+    padding:10px;
+    font-size:150%;
+    margin:20px;
+    border:white solid 2px;
+}
+
+#column1{
+    grid-column:1/2;
+    color:white;
+    background-color:#ed7d3aff;
+    font-family:Candara, Helvetica, Arial;
+    margin-left:10px;
+    margin-right:5px;
+
+}
+
+#column2{
+    grid-column:2/3;
+    color:white;
+    background-color:#363537ff;
+    font-family:Candara, Helvetica, Arial;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+#column3{
+    grid-column:3/4;
+    color:white;
+    background-color:#ef2d56ff;
+    font-family:Candara, Helvetica, Arial;
+    margin-left:5px;
+    margin-right:10px;
+    
+}
+
+.column-heading{
+    font-size:200%;
+    padding:10px;
+}
+
+.column-text{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:20px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color:#C3E0A6;
+    margin:20px;
+    grid-column:1/4;
+    color:#363537ff;
+    font-family:Candara, Helvetica, Arial;
+}
+
+#resource-heading{
+    color:#363537ff;
+}
+
+#resources{
+    grid-column:1/2;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+#footer-links{
+    grid-column:2/4;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin:20px;
+    text-align:center;
+    font-size:150%;
+}
+
 
 
