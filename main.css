@@ -17,82 +17,88 @@ body{
 }
 
 .title{
-    color: #ed7d3aff;
+    color: #2fbf71ff;
     font-family: Candara, Helvetica, Arial;
     font-size:400%;
     grid-column: 1/4;
-
+    grid-row:1/2;
     text-align:left;
 
-    padding-left:10px;
+    padding-left:20px;
 }
 
 .tagline{
 
-    color:#ed7d3aff;
+    color:#2fbf71ff;
     font-family: "Arial Narrow";
-    font-size:200%;
+    font-size:150%;
     grid-column: 1/4;
 
     text-align:left;
 
     padding-bottom:5px;
-    padding-left:10px;
+    padding-left:20px;
 
-    grid-row:1/2;
+    grid-row:2/3;
     font-style:italic;
 
 
 }
 
 .nav-button{
-    background-color:#ef2d56ff;
+    background-color:#ed7d3aff;
     color:white;
     font-family: Candara, Helvetica, Arial;
     text-decoration:none;
-    font-size:200%;
+    font-size:110%;
     margin:10px;
     text-align:center;
-    padding: 10px;
+    padding: 5px;
     border-radius:25px;
-
-}
-
-#overlay{
-    position:absolute;
-
+    max-height:30px;
+    width:300px;
+    height:30px;
+    border: solid 3px #ed7d3aff;
 }
 
 #nav-area{
     grid-column:1/2;
-    grid-row:1/3;
+    grid-row:3/5;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin-left:40px;
-    margin-top:40px;
-    width:300px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+    margin-left:20px;
+    margin-top:20px;
+    position:absolute;
+    padding-bottom:5px;
+
 }
 
-.main-pic{
+.main-pic-container{
     grid-column:1/4;
-    grid-row:1/3;
+    grid-row:3/5;
     margin-right: 20px;
     margin-left:20px;
-    position:relative;
+    margin-bottom:0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+
 }
 
-
+#main-pic{
+    grid-column:1/4;
+}
 
 
 
 
 #current-button{
     border: solid 3px white;
-    background-color:#F4708C;
+    background-color:#ed7d3aff;
 }
 
 main{
     grid-column:1/4;
+    grid-row:5/6;
     background-color:#2fbf71ff;
     color:white;
     font-family:Candara, Helvetica, Arial;
@@ -124,7 +130,7 @@ main{
 #column2{
     grid-column:2/3;
     color:white;
-    background-color:#C3E0A6;
+    background-color:#ed7d3aff;
     font-family:Candara, Helvetica, Arial;
     margin-left:10px;
     margin-right:10px;
@@ -133,7 +139,7 @@ main{
 #column3{
     grid-column:3/4;
     color:white;
-    background-color:#ef2d56ff;
+    background-color:#ed7d3aff;
     font-family:Candara, Helvetica, Arial;
     margin-left:10px;
     margin-right:20px;
@@ -154,7 +160,7 @@ main{
 footer{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    background-color:#C3E0A6;
+    background-color:#2fbf71ff;
     margin:20px;
     grid-column:1/4;
     color:#363537ff;
@@ -167,20 +173,63 @@ footer{
 }
 
 #resources{
+    color:#363537ff;
     grid-column:1/2;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
+
+
+}
+
+#resources a{
+    color:#363537ff;
+    text-decoration-line:none;
+    padding:5px;
+    text-align:left;
 }
 
 #footer-links{
     grid-column:2/4;
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    margin:20px;
-    text-align:center;
+    text-align:left;
     font-size:150%;
+
 }
 
+#footer-links a{
+    color:#363537ff;
+    text-decoration-line:none;
+}
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .title{
+        font-size:200%;
+    }
+    .nav-button{
+    font-size:75%;
+    margin:3px;
+    text-align:center;
+    padding: 2px;
+    border-radius:15px;
+    width:200px;
+    height:20px;
+
+    }
+
+    #nav-area{
+
+        margin-left:5px;
+        margin-top:5px;
+
+ 
+    
+    }
+
+    }
 
