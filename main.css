@@ -34,7 +34,7 @@ body{
 
     background-color:#ed7d3aff;
     color:white;
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", Arial;
     font-size:150%;
     grid-column: 1/4;
     margin-bottom:20px;
