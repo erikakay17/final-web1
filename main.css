@@ -17,23 +17,29 @@ body{
 }
 
 .title{
-    color: #ed7d3aff;
+    color: white;
     font-family: Candara, Helvetica, Arial;
     font-size:400%;
     grid-column: 1/4;
     grid-row:1/2;
     text-align:left;
-
+    background-color:#ed7d3aff;
     padding-left:20px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
 }
 
 .tagline{
 
-    color:#ed7d3aff;
+    background-color:#ed7d3aff;
+    color:white;
     font-family: "Arial Narrow";
     font-size:150%;
     grid-column: 1/4;
-
+    margin-bottom:20px;
+    margin-left:20px;
+    margin-right:20px;
     text-align:left;
 
     padding-bottom:5px;
